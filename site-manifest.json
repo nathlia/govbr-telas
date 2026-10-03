@@ -2,9 +2,9 @@
   "contract": "site-manifest.v1",
   "subsetOf": "snapshot-manifest.v1",
   "fixture": false,
-  "createdAt": "2026-10-03T01:21:27Z",
+  "createdAt": "2026-10-03T01:41:22Z",
   "exporter": {
-    "version": "export-telas-1.0.0"
+    "version": "export-telas-1.1.0"
   },
   "package": {
     "name": "govbr-telas",
@@ -1110,8 +1110,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "c477c178961dbaad5d005b47cf38eb5bf26e2c0b06c36165d6f4ca8590599fe5",
-      "bytes": 3088
+      "sha256": "45187f1f9e6a8603e9a74fc8d0edfe65698565b0a6cf33917b135ccca0624dc8",
+      "bytes": 3345
     },
     {
       "path": "package.json",
@@ -1122,6 +1122,13 @@
       "path": "server.mjs",
       "sha256": "097940f1aa3504437274f34b4236cd323dc469cd1d594772f4874a8c14435fa0",
       "bytes": 6212
+    }
+  ],
+  "skills": [
+    {
+      "path": "skills/avaliar-tela/SKILL.md",
+      "sha256": "61d94cc16de2a53c3dd9b2633194d7faebba19f18a7c232904c0b6d5765faac4",
+      "bytes": 6580
     }
   ],
   "total": {
