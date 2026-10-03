@@ -2,14 +2,14 @@
   "contract": "site-manifest.v1",
   "subsetOf": "snapshot-manifest.v1",
   "fixture": false,
-  "createdAt": "2026-10-03T01:41:22Z",
+  "createdAt": "2026-10-03T02:24:06Z",
   "exporter": {
-    "version": "export-telas-1.1.0"
+    "version": "export-telas-1.2.0"
   },
   "package": {
     "name": "govbr-telas",
     "version": "1.0.0",
-    "node": "25.2.1"
+    "node": "24.21.0"
   },
   "item": {
     "id": "govbr-telas-site-1a6e8daf3cdb",
@@ -57,7 +57,7 @@
       "build": {
         "command": "node node_modules/vite/bin/vite.js build --outDir <temporário> --emptyOutDir --logLevel warn",
         "tool": "vite 8.1.4",
-        "node": "v25.2.1"
+        "node": "v24.21.0"
       },
       "selection": "fechamento de arquivos citados a partir de solicitacao.html no build"
     },
@@ -1105,8 +1105,8 @@
     },
     {
       "path": ".node-version",
-      "sha256": "df753cffe2db3a02f70d9003df80692390d49b459150b5743ea9d4c4d3dd197c",
-      "bytes": 7
+      "sha256": "73fb1b615e2043a933be1c0895cde4358036acc28d785692509b822aa53c761f",
+      "bytes": 8
     },
     {
       "path": "README.md",
