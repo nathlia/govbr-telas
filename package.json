@@ -1,0 +1,13 @@
+{
+  "name": "govbr-telas",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Duas telas web estáticas e um servidor mínimo (somente módulos nativos do Node.js).",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}
