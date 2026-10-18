@@ -2,7 +2,7 @@
   "contract": "site-manifest.v1",
   "subsetOf": "snapshot-manifest.v1",
   "fixture": false,
-  "createdAt": "2026-10-03T02:24:06Z",
+  "createdAt": "2026-10-18T02:50:46Z",
   "exporter": {
     "version": "export-telas-1.2.0"
   },
@@ -49,7 +49,7 @@
   },
   "origin": {
     "corpus": {
-      "commit": "5a3c3f8082c5a4595d27addc759270a0cfab4d92",
+      "commit": "0f1e4aad082f255776c6bd1beae5105184017023",
       "dirty": false,
       "dirtyAllowed": false
     },
@@ -1127,8 +1127,8 @@
   "skills": [
     {
       "path": "skills/avaliar-tela/SKILL.md",
-      "sha256": "61d94cc16de2a53c3dd9b2633194d7faebba19f18a7c232904c0b6d5765faac4",
-      "bytes": 6580
+      "sha256": "af57905541d6b058b410893774a8cdfb7aaba2b60c9f4eb8478f23764f04e1a9",
+      "bytes": 9413
     }
   ],
   "total": {
