@@ -2,7 +2,7 @@
   "contract": "site-manifest.v1",
   "subsetOf": "snapshot-manifest.v1",
   "fixture": false,
-  "createdAt": "2026-10-28T23:05:46Z",
+  "createdAt": "2026-10-28T23:08:12Z",
   "exporter": {
     "version": "export-telas-1.2.0"
   },
@@ -57,7 +57,7 @@
       "build": {
         "command": "node node_modules/vite/bin/vite.js build --outDir <temporário> --emptyOutDir --logLevel warn",
         "tool": "vite 8.1.4",
-        "node": "v25.2.1"
+        "node": "v24.21.0"
       },
       "selection": "fechamento de arquivos citados a partir de solicitacao.html no build"
     },
