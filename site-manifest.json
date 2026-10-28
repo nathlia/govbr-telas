@@ -2,7 +2,7 @@
   "contract": "site-manifest.v1",
   "subsetOf": "snapshot-manifest.v1",
   "fixture": false,
-  "createdAt": "2026-10-18T02:50:46Z",
+  "createdAt": "2026-10-28T23:05:46Z",
   "exporter": {
     "version": "export-telas-1.2.0"
   },
@@ -49,7 +49,7 @@
   },
   "origin": {
     "corpus": {
-      "commit": "0f1e4aad082f255776c6bd1beae5105184017023",
+      "commit": "94b486d1a386b042a5375255e0b196d6655d6624",
       "dirty": false,
       "dirtyAllowed": false
     },
@@ -57,7 +57,7 @@
       "build": {
         "command": "node node_modules/vite/bin/vite.js build --outDir <temporário> --emptyOutDir --logLevel warn",
         "tool": "vite 8.1.4",
-        "node": "v24.21.0"
+        "node": "v25.2.1"
       },
       "selection": "fechamento de arquivos citados a partir de solicitacao.html no build"
     },
@@ -1127,8 +1127,8 @@
   "skills": [
     {
       "path": "skills/avaliar-tela/SKILL.md",
-      "sha256": "af57905541d6b058b410893774a8cdfb7aaba2b60c9f4eb8478f23764f04e1a9",
-      "bytes": 9413
+      "sha256": "a58d309eb8b05bfe37c5a92f24ec0b3e203aa10b32fa62bce59d3076e9229a75",
+      "bytes": 10152
     }
   ],
   "total": {
