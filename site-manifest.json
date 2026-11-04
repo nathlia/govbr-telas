@@ -2,9 +2,9 @@
   "contract": "site-manifest.v1",
   "subsetOf": "snapshot-manifest.v1",
   "fixture": false,
-  "createdAt": "2026-10-30T09:16:23Z",
+  "createdAt": "2026-11-04T02:29:45Z",
   "exporter": {
-    "version": "export-telas-1.2.0"
+    "version": "export-telas-1.3.0"
   },
   "package": {
     "name": "govbr-telas",
@@ -12,11 +12,11 @@
     "node": "24.21.0"
   },
   "item": {
-    "id": "govbr-telas-site-1a6e8daf3cdb",
+    "id": "govbr-telas-site-88076aec26e9",
     "kind": "site",
-    "description": "Arquivos servidos das telas solicitacao e vistorias; sha256 = hash da listagem 'sha256  caminho' ordenada de files[].",
-    "sha256": "1a6e8daf3cdb02da4f03cc3e39f52c0a1f44063b8270238ac5caf78eae39d11a",
-    "bytes": 23347262,
+    "description": "Arquivos servidos das telas solicitacao, vistorias e acompanhamento; sha256 = hash da listagem 'sha256  caminho' ordenada de files[].",
+    "sha256": "88076aec26e9b144831330bf76c35b5c38ed139f1c4305f16c08ec905dada8f8",
+    "bytes": 25903222,
     "location": {
       "kind": "package-path",
       "path": "site",
@@ -36,6 +36,11 @@
       "id": "vistorias",
       "title": "Vistorias",
       "entry": "/pnip/portal-mpa/vistorias?mock-perfil=mpa"
+    },
+    {
+      "id": "acompanhamento",
+      "title": "Acompanhar requerimento",
+      "entry": "/acompanhamento.html"
     }
   ],
   "routing": {
@@ -49,7 +54,7 @@
   },
   "origin": {
     "corpus": {
-      "commit": "94b486d1a386b042a5375255e0b196d6655d6624",
+      "commit": "1abcc50e5104d3f5ee90fa7cea7f093136a14b83",
       "dirty": false,
       "dirtyAllowed": false
     },
@@ -60,6 +65,19 @@
         "node": "v24.21.0"
       },
       "selection": "fechamento de arquivos citados a partir de solicitacao.html no build"
+    },
+    "acompanhamento": {
+      "build": {
+        "command": "node node_modules/vite/bin/vite.js build --outDir <temporário> --emptyOutDir --logLevel warn",
+        "tool": "vite 8.1.4",
+        "node": "v24.21.0"
+      },
+      "public": [
+        "public/acompanhamento",
+        "public/inicio.html",
+        "public/meus-requerimentos.html"
+      ],
+      "selection": "fechamento de arquivos citados a partir de acompanhamento.html no build, com public/acompanhamento, public/inicio.html, public/meus-requerimentos.html devolvidos ao build"
     },
     "vistorias": {
       "freezeManifestSha256": "eb2d439d128c6ca3bd5bd3a66f33de4dd22e4f15efcf05447c0a0df7a4c44d98",
@@ -76,6 +94,36 @@
     }
   },
   "files": [
+    {
+      "path": "acompanhamento.html",
+      "sha256": "d7496a29fc569b1fd647b7e09c8925dee1375cd7709b69d7f3d65cbaf49a0dd8",
+      "bytes": 15442
+    },
+    {
+      "path": "acompanhamento/comportamento.js",
+      "sha256": "126f73de5e12340ced9baebd5ee717095794050fea4a0d7d806e89a21a2437fb",
+      "bytes": 8484
+    },
+    {
+      "path": "acompanhamento/core.min.js",
+      "sha256": "7fad494d8750e635ed0f94b1220466c682d248e2b7ce52932672939a008f45b4",
+      "bytes": 231967
+    },
+    {
+      "path": "acompanhamento/marca-govbr-negativa.svg",
+      "sha256": "13f6d81618493d5b71aeacb4eaa7e900ff20e6f2afa8c032751e7e0488e8fb94",
+      "bytes": 246
+    },
+    {
+      "path": "acompanhamento/marca-govbr.svg",
+      "sha256": "2e0fb514d09c8c7f4a45737b1585be0e11f15ba251ad4f3242afde0ce015c4a7",
+      "bytes": 321
+    },
+    {
+      "path": "assets/acompanhamento-24RnUkmJ.css",
+      "sha256": "ec9c308bb9a1034fe03e4fc53b2c02ee2e6f0a23c5f438c0e7663025b1147684",
+      "bytes": 811570
+    },
     {
       "path": "assets/all-D-ZQRcNM.css",
       "sha256": "33e012f23db346bff314198c5797df18fa5dd575afe30191bde308a3c98e2899",
@@ -132,6 +180,96 @@
       "bytes": 190843
     },
     {
+      "path": "assets/rawline-100-DCGGvWLw.woff2",
+      "sha256": "6513de591d55f848271507b0f98f732f556e39e77ba08e6ae932a35132dd25d5",
+      "bytes": 75668
+    },
+    {
+      "path": "assets/rawline-100i-HWiNevSE.woff2",
+      "sha256": "40dabbe35cab8cc8b24120e1de30634f4fd37c02f69d2b438e90bbc529f33ada",
+      "bytes": 79820
+    },
+    {
+      "path": "assets/rawline-200-EHB4EfRN.woff2",
+      "sha256": "dadd09cf74df96bedc4d1af8cfc5ce2b03a9dec40f452bac2c51fec90f1c793c",
+      "bytes": 79296
+    },
+    {
+      "path": "assets/rawline-200i-CDV76-Wb.woff2",
+      "sha256": "97b3e710ed9d5f82fea2aaa8a1fc06f202d52a2db8370fac807a661c095058e5",
+      "bytes": 83552
+    },
+    {
+      "path": "assets/rawline-300-BqHAVvMD.woff2",
+      "sha256": "22f6e9332ccc50d2964176e6ba8ad99713174b7a958aa427be93b0498c620ef9",
+      "bytes": 81848
+    },
+    {
+      "path": "assets/rawline-300i-vlcUqshs.woff2",
+      "sha256": "cd81323e4cc8f34bc02863c22239023392d2a086a2cdc9205d833a70c2a2af9c",
+      "bytes": 84340
+    },
+    {
+      "path": "assets/rawline-400-BqhlWy2a.woff2",
+      "sha256": "8e9d1aba37a102665016fffea61a124e6c385d6783d6cef869f9910c6115a401",
+      "bytes": 81280
+    },
+    {
+      "path": "assets/rawline-400i-PUH_9U8r.woff2",
+      "sha256": "4159759f81ccd1aaf463adb22d7e1e60a3eac8c9e2631af253b206fbad6d18aa",
+      "bytes": 85084
+    },
+    {
+      "path": "assets/rawline-500-CxV2AXst.woff2",
+      "sha256": "b27371e0d1c15bc18ad3ee3f2f68a51ca0d8f53ae9a92b651d3410aabe1fd92c",
+      "bytes": 80524
+    },
+    {
+      "path": "assets/rawline-500i-CbQ0wd6O.woff2",
+      "sha256": "96254ce96be5d4afbe8f9b165be114efca60d3f5c31a37aac344fe6e8c844808",
+      "bytes": 82244
+    },
+    {
+      "path": "assets/rawline-600-CUEPv6WL.woff2",
+      "sha256": "306d87c0767afb29674ac486d69662c98ca2022ffb265427f0347a63b0de5038",
+      "bytes": 83564
+    },
+    {
+      "path": "assets/rawline-600i--SljghX-.woff2",
+      "sha256": "451409738b516ec17368713c567bdf1f8afa4810aa15d82896f1eb75444696a0",
+      "bytes": 86784
+    },
+    {
+      "path": "assets/rawline-700-BUasdJqT.woff2",
+      "sha256": "ff634420069ce898e30ab4d72b61c67ece52f12718dc06818367726292d8da7f",
+      "bytes": 82580
+    },
+    {
+      "path": "assets/rawline-700i-DA_ME0CZ.woff2",
+      "sha256": "cdf41ca5cb6f59deb9550df353c1c4668933768fcf9de08c0b7e67881c835ee1",
+      "bytes": 86632
+    },
+    {
+      "path": "assets/rawline-800-BYOUaBap.woff2",
+      "sha256": "c57d316f8a94ec93d748dc11c3a25b6dd58c0ca338c4d686e979ef60c51930dd",
+      "bytes": 82352
+    },
+    {
+      "path": "assets/rawline-800i-CJ6QkrXH.woff2",
+      "sha256": "3b4e268b7f029cf1e872eea8ff5e587e20b124c72cee710e6f466a83311d9e87",
+      "bytes": 87180
+    },
+    {
+      "path": "assets/rawline-900-PFGrIxAh.woff2",
+      "sha256": "f7dac64634b7e6ee44cdf906aefd5cbe19ff4ee009235d614e061dd5d0c809f3",
+      "bytes": 79992
+    },
+    {
+      "path": "assets/rawline-900i-D1NBHFk2.woff2",
+      "sha256": "0267eba7139b511572c432d6232cd75691e9f6bbe492328978dc68287bd3d96a",
+      "bytes": 84432
+    },
+    {
       "path": "assets/solicitacao-D9ODjg1O.css",
       "sha256": "d0fb2f8dcade3bf0744908fb7a3a3196d85b1f362710ecea53e8b0f2d2488125",
       "bytes": 2036
@@ -140,6 +278,16 @@
       "path": "assets/solicitacao-DbxLPFVo.js",
       "sha256": "6bcf8591508fa8b3287d24c99b1817816d95cbaefac3d3629462409d38d7f497",
       "bytes": 247689
+    },
+    {
+      "path": "inicio.html",
+      "sha256": "412bfb114dd744a5459698255dcb02634f927e1b2984616df3adb2207be9fe8d",
+      "bytes": 345
+    },
+    {
+      "path": "meus-requerimentos.html",
+      "sha256": "0da86e5ffac435ba5afd4ab8ec252323cfb29c7e664788391483bd7c3cdc8232",
+      "bytes": 413
     },
     {
       "path": "pnip/10.c8f744a1532cd9fb.js",
@@ -1110,13 +1258,13 @@
     },
     {
       "path": "README.md",
-      "sha256": "45187f1f9e6a8603e9a74fc8d0edfe65698565b0a6cf33917b135ccca0624dc8",
-      "bytes": 3345
+      "sha256": "44e041bb1ac6b6a485307cfb8bada0f22fa798e2ab08e9b2709016ef8f17743f",
+      "bytes": 3762
     },
     {
       "path": "package.json",
-      "sha256": "b29fa10955fc7627204f546fbb7b15446d98675893e94b0e23ccc493f21d40e4",
-      "bytes": 291
+      "sha256": "db99c9d5d2aa149675d7c41097683478d60d8b54948f4011e59acf0d78b01f25",
+      "bytes": 292
     },
     {
       "path": "server.mjs",
@@ -1132,7 +1280,7 @@
     }
   ],
   "total": {
-    "files": 204,
-    "bytes": 23347262
+    "files": 230,
+    "bytes": 25903222
   }
 }
