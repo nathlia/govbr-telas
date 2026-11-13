@@ -2,7 +2,7 @@
   "name": "govbr-telas",
   "version": "1.0.0",
   "private": true,
-  "description": "Três telas web estáticas e um servidor mínimo (somente módulos nativos do Node.js).",
+  "description": "Quatro telas web estáticas e um servidor mínimo (somente módulos nativos do Node.js).",
   "type": "module",
   "scripts": {
     "start": "node server.mjs"
