@@ -2,9 +2,9 @@
   "contract": "site-manifest.v1",
   "subsetOf": "snapshot-manifest.v1",
   "fixture": false,
-  "createdAt": "2026-11-13T12:14:51Z",
+  "createdAt": "2026-11-16T18:00:31Z",
   "exporter": {
-    "version": "export-telas-1.4.0"
+    "version": "export-telas-1.5.0"
   },
   "package": {
     "name": "govbr-telas",
@@ -12,11 +12,11 @@
     "node": "24.21.0"
   },
   "item": {
-    "id": "govbr-telas-site-9f4b936f2859",
+    "id": "govbr-telas-site-968abbd974d5",
     "kind": "site",
-    "description": "Arquivos servidos das telas solicitacao, vistorias, acompanhamento e processos; sha256 = hash da listagem 'sha256  caminho' ordenada de files[].",
-    "sha256": "9f4b936f2859c87ac46f0013a3b58c3eae356db6aa7b23cf50cb497ec24a1cfd",
-    "bytes": 46992154,
+    "description": "Arquivos servidos das telas solicitacao, vistorias, acompanhamento, processos e cadastro-pais; sha256 = hash da listagem 'sha256  caminho' ordenada de files[].",
+    "sha256": "968abbd974d5ad0a86b358c2160c34762fe3fb46b4f6f17daf16dc0fc127aa8b",
+    "bytes": 48056309,
     "location": {
       "kind": "package-path",
       "path": "site",
@@ -46,6 +46,11 @@
       "id": "processos",
       "title": "Processos",
       "entry": "/pnip-d/portal-mpa/processos?mock-perfil=mpa"
+    },
+    {
+      "id": "cadastro-pais",
+      "title": "Cadastrar país importador",
+      "entry": "/cadastro-pais.html"
     }
   ],
   "routing": {
@@ -69,7 +74,7 @@
   },
   "origin": {
     "corpus": {
-      "commit": "1abcc50e5104d3f5ee90fa7cea7f093136a14b83",
+      "commit": "f03ceb912dfe08a346fdd301723814a2089c5081",
       "dirty": false,
       "dirtyAllowed": false
     },
@@ -119,6 +124,21 @@
         "node": "16.20.2",
         "framework": "angular 15.2.10"
       }
+    },
+    "cadastro-pais": {
+      "build": {
+        "command": "node node_modules/vite/bin/vite.js build --outDir <temporário> --emptyOutDir --logLevel warn",
+        "tool": "vite 8.1.4",
+        "node": "v24.21.0"
+      },
+      "public": [
+        "public/cadastro-pais",
+        "public/administracao.html",
+        "public/minha-conta.html",
+        "public/paises-importadores.html",
+        "public/servicos-defesa.html"
+      ],
+      "selection": "fechamento de arquivos citados a partir de cadastro-pais.html no build, com public/cadastro-pais, public/administracao.html, public/minha-conta.html, public/paises-importadores.html, public/servicos-defesa.html devolvidos ao build"
     }
   },
   "files": [
@@ -148,6 +168,11 @@
       "bytes": 321
     },
     {
+      "path": "administracao.html",
+      "sha256": "0f5d2f43d2a4616f37047a41d7173a427ba37cce8f30b2866a52d1a2290d9d3f",
+      "bytes": 349
+    },
+    {
       "path": "assets/acompanhamento-24RnUkmJ.css",
       "sha256": "ec9c308bb9a1034fe03e4fc53b2c02ee2e6f0a23c5f438c0e7663025b1147684",
       "bytes": 811570
@@ -156,6 +181,11 @@
       "path": "assets/all-D-ZQRcNM.css",
       "sha256": "33e012f23db346bff314198c5797df18fa5dd575afe30191bde308a3c98e2899",
       "bytes": 92808
+    },
+    {
+      "path": "assets/cadastro-pais-BwO4kZri.css",
+      "sha256": "d15a3d6261c8ec587fa405bf202b0ac76db4cc567c10e92318a1881187b8720e",
+      "bytes": 811820
     },
     {
       "path": "assets/fa-brands-400-Dur5g48u.ttf",
@@ -308,6 +338,31 @@
       "bytes": 247689
     },
     {
+      "path": "cadastro-pais.html",
+      "sha256": "6d85aae9ec2a5e17db16cc74830185dfb5562b06068a2d5de5675977644f710f",
+      "bytes": 11851
+    },
+    {
+      "path": "cadastro-pais/comportamento.js",
+      "sha256": "853bf917aad2bde4db2fc356f7923d0d34ed091d574b0571b64c4bae17f9175c",
+      "bytes": 6604
+    },
+    {
+      "path": "cadastro-pais/core.min.js",
+      "sha256": "7fad494d8750e635ed0f94b1220466c682d248e2b7ce52932672939a008f45b4",
+      "bytes": 231967
+    },
+    {
+      "path": "cadastro-pais/marca-govbr-negativa.svg",
+      "sha256": "74c7dcc6aa2990017419753bc587bae1ab0cd44ccafc7666ca1c6fec7a64cad8",
+      "bytes": 247
+    },
+    {
+      "path": "cadastro-pais/marca-govbr.svg",
+      "sha256": "0dbfa870911a4de60556ea69624d14e42c6977f32945c6ee65b4cc4982a3f2a5",
+      "bytes": 322
+    },
+    {
       "path": "inicio.html",
       "sha256": "412bfb114dd744a5459698255dcb02634f927e1b2984616df3adb2207be9fe8d",
       "bytes": 345
@@ -316,6 +371,16 @@
       "path": "meus-requerimentos.html",
       "sha256": "0da86e5ffac435ba5afd4ab8ec252323cfb29c7e664788391483bd7c3cdc8232",
       "bytes": 413
+    },
+    {
+      "path": "minha-conta.html",
+      "sha256": "faa36d3fb7b4be84565533ef3981d8bcb54e729299941842aa54bb5c3daecbcf",
+      "bytes": 314
+    },
+    {
+      "path": "paises-importadores.html",
+      "sha256": "a03d413205b1122cc64683b1603ad3e94007265856b0ea60ab1c0d0de5dba5ec",
+      "bytes": 359
     },
     {
       "path": "pnip-d/10.c8f744a1532cd9fb.js",
@@ -2218,6 +2283,11 @@
       "bytes": 13892
     },
     {
+      "path": "servicos-defesa.html",
+      "sha256": "a038103e6ac7e232f8595a74068ae3396361cc5f01d6594c55668b73da580347",
+      "bytes": 322
+    },
+    {
       "path": "solicitacao.html",
       "sha256": "3e01dcdd3d68193641178a9bdfb523e1022568bde1fe212931cd6daed09a90fb",
       "bytes": 675
@@ -2236,13 +2306,13 @@
     },
     {
       "path": "README.md",
-      "sha256": "fba8f2c596246cf4e922e1aca4d8fc8a4052066242fcab0696bb61ea4cf87782",
-      "bytes": 4197
+      "sha256": "03a3afe5d0caaf31c7895be7d70d1e1f0942be21b319f2f7d09af4efa6fd4170",
+      "bytes": 4644
     },
     {
       "path": "package.json",
-      "sha256": "38935111c425508c715cd2706b003229822527e07146e79110d776cb83f0534d",
-      "bytes": 293
+      "sha256": "f2a93db66e0012583c78b1aca34b3ad9c6de328ed1eb4a6f13e08111e67fa034",
+      "bytes": 292
     },
     {
       "path": "server.mjs",
@@ -2258,7 +2328,7 @@
     }
   ],
   "total": {
-    "files": 420,
-    "bytes": 46992154
+    "files": 430,
+    "bytes": 48056309
   }
 }
